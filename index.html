@@ -50,6 +50,7 @@
     }
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -93,6 +94,8 @@
   }
   #ics-subscribe { background: var(--accent); }
   #ics-subscribe:hover { background: var(--accent-hover); }
+  #flyers-link { background: var(--panel-alt); color: var(--text); border: 1px solid var(--border); }
+  #flyers-link:hover { background: var(--panel-alt-hover); }
   #theme-toggle {
     position: fixed;
     top: 16px;
@@ -308,6 +311,7 @@
   <p>Ligue de Judo de la Martinique — calendrier public, lecture seule</p>
   <div id="cta-row">
     <a id="ics-subscribe" class="cta-btn" href="#">📅 Ajouter à mon calendrier</a>
+    <a id="flyers-link" class="cta-btn" href="#flyers-wrap">🖼️ Voir les flyers</a>
   </div>
 </header>
 
