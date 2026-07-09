@@ -124,13 +124,10 @@
     font-size: 0.85rem;
     color: var(--text);
   }
-  #age-notice .belt-dot {
+  #age-notice .belt-icon {
     flex-shrink: 0;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: #f6bf26;
-    box-shadow: 0 0 0 3px rgba(246, 191, 38, 0.25);
+    width: 30px;
+    height: 30px;
   }
   #legend {
     display: flex;
@@ -271,7 +268,14 @@
 </header>
 
 <div id="age-notice">
-  <span class="belt-dot"></span>
+  <svg class="belt-icon" viewBox="0 0 48 32" aria-hidden="true">
+    <rect x="0" y="12" width="48" height="8" rx="4" fill="#f6bf26" stroke="#c9960f" stroke-width="1"/>
+    <rect x="17" y="5" width="14" height="22" rx="4" fill="#f6bf26" stroke="#c9960f" stroke-width="1"/>
+    <rect x="19" y="17" width="4" height="14" rx="2" fill="#f6bf26" stroke="#c9960f" stroke-width="1" transform="rotate(18 21 17)"/>
+    <rect x="25" y="17" width="4" height="14" rx="2" fill="#f6bf26" stroke="#c9960f" stroke-width="1" transform="rotate(-18 27 17)"/>
+    <line x1="20" y1="9" x2="28" y2="9" stroke="#c9960f" stroke-width="1"/>
+    <line x1="20" y1="13" x2="28" y2="13" stroke="#c9960f" stroke-width="1"/>
+  </svg>
   <span>À partir de benjamin (ceinture jaune)</span>
 </div>
 
