@@ -257,6 +257,7 @@ fetch('events.json')
     const isMobile = window.matchMedia('(max-width: 640px)').matches;
     const calendar = new FullCalendar.Calendar(calendarEl, {
       locale: 'fr',
+      firstDay: 1,
       initialView: isMobile ? 'listMonth' : 'dayGridMonth',
       initialDate: '2026-07-15',
       headerToolbar: {
