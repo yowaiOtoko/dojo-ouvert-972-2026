@@ -4,16 +4,49 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Opération Dojos Ouverts 2026 - Martinique Judo</title>
+<script>
+  (function() {
+    const saved = localStorage.getItem('theme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+  })();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/locales-all.global.min.js"></script>
 <style>
-  :root {
+  :root, :root[data-theme="dark"] {
     --bg: #0f1115;
     --panel: #1a1d24;
+    --panel-alt: #22252d;
+    --panel-alt-hover: #2a2d38;
     --text: #e8e8ea;
     --muted: #9aa0aa;
     --accent: #4a90d9;
+    --accent-hover: #3f7fc2;
     --border: #2a2d35;
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f5f7;
+    --panel: #ffffff;
+    --panel-alt: #eef0f3;
+    --panel-alt-hover: #e2e5ea;
+    --text: #1a1d24;
+    --muted: #63676f;
+    --accent: #2f6fb0;
+    --accent-hover: #275c93;
+    --border: #dde0e5;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme]) {
+      --bg: #f4f5f7;
+      --panel: #ffffff;
+      --panel-alt: #eef0f3;
+      --panel-alt-hover: #e2e5ea;
+      --text: #1a1d24;
+      --muted: #63676f;
+      --accent: #2f6fb0;
+      --accent-hover: #275c93;
+      --border: #dde0e5;
+    }
   }
   * { box-sizing: border-box; }
   body {
@@ -21,6 +54,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
+    transition: background 0.15s, color 0.15s;
   }
   header {
     padding: 24px 20px 12px;
@@ -57,7 +91,25 @@
     text-decoration: none;
   }
   #ics-subscribe { background: var(--accent); }
-  #ics-subscribe:hover { background: #3f7fc2; }
+  #ics-subscribe:hover { background: var(--accent-hover); }
+  #theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  #theme-toggle:hover { background: var(--panel-alt); }
   #legend {
     display: flex;
     flex-wrap: wrap;
@@ -94,19 +146,19 @@
   .fc {
     --fc-border-color: var(--border);
     --fc-page-bg-color: var(--panel);
-    --fc-neutral-bg-color: #22252d;
-    --fc-list-event-hover-bg-color: #22252d;
+    --fc-neutral-bg-color: var(--panel-alt);
+    --fc-list-event-hover-bg-color: var(--panel-alt);
     --fc-today-bg-color: rgba(74, 144, 217, 0.12);
   }
   .fc .fc-toolbar-title { color: var(--text); font-size: 1.2rem; }
   .fc .fc-button {
-    background: #22252d;
+    background: var(--panel-alt);
     border: 1px solid var(--border);
     color: var(--text);
     text-transform: capitalize;
     box-shadow: none;
   }
-  .fc .fc-button:hover { background: #2a2d38; }
+  .fc .fc-button:hover { background: var(--panel-alt-hover); }
   .fc .fc-button-primary:not(:disabled).fc-button-active,
   .fc .fc-button-primary:not(:disabled):active {
     background: var(--accent);
@@ -115,8 +167,8 @@
   .fc-daygrid-day-number, .fc-col-header-cell-cushion { color: var(--text); }
   .fc-daygrid-day.fc-day-other .fc-daygrid-day-number { color: var(--muted); }
   .fc-event { cursor: pointer; border: none !important; padding: 1px 4px; font-size: 0.8rem; }
-  .fc-list-day-cushion { background: #22252d !important; color: var(--text); }
-  .fc-list-event:hover td { background: #22252d !important; }
+  .fc-list-day-cushion { background: var(--panel-alt) !important; color: var(--text); }
+  .fc-list-event:hover td { background: var(--panel-alt) !important; }
   .fc-list-event-title { color: var(--text) !important; }
   .fc-list-event-time { color: var(--muted) !important; }
 
@@ -185,6 +237,8 @@
 </head>
 <body>
 
+<button id="theme-toggle" aria-label="Changer de thème" onclick="toggleTheme()"></button>
+
 <header>
   <h1>Opération Dojos Ouverts 2026</h1>
   <p>Ligue de Judo de la Martinique — calendrier public, lecture seule</p>
@@ -211,6 +265,21 @@
 </div>
 
 <script>
+function currentTheme() {
+  return document.documentElement.getAttribute('data-theme') ||
+    (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+}
+function updateThemeToggleIcon() {
+  document.getElementById('theme-toggle').textContent = currentTheme() === 'dark' ? '☀️' : '🌙';
+}
+function toggleTheme() {
+  const next = currentTheme() === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  updateThemeToggleIcon();
+}
+updateThemeToggleIcon();
+
 function closeModal() {
   document.getElementById('modal-overlay').classList.remove('open');
 }
