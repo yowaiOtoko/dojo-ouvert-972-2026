@@ -64,7 +64,7 @@
     gap: 10px 18px;
     justify-content: center;
     padding: 14px 20px;
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 0 auto;
   }
   .legend-item {
@@ -81,7 +81,7 @@
     flex-shrink: 0;
   }
   #calendar-wrap {
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 20px 40px;
   }
@@ -119,6 +119,16 @@
   .fc-list-event:hover td { background: #22252d !important; }
   .fc-list-event-title { color: var(--text) !important; }
   .fc-list-event-time { color: var(--muted) !important; }
+
+  @media (min-width: 900px) {
+    #calendar { padding: 28px; }
+    .fc .fc-toolbar-title { font-size: 1.5rem; }
+    .fc .fc-button { padding: 8px 16px; font-size: 0.95rem; }
+    .fc-daygrid-day-number { font-size: 1.05rem; }
+    .fc-col-header-cell-cushion { font-size: 0.9rem; padding: 8px 0; }
+    .fc-event { font-size: 0.88rem; padding: 3px 6px; }
+    .fc-daygrid-day-frame { min-height: 110px; }
+  }
 
   #modal-overlay {
     display: none;
