@@ -216,11 +216,15 @@ document.getElementById('modal-overlay').addEventListener('click', (e) => {
   if (e.target.id === 'modal-overlay') closeModal();
 });
 
-// webcal:// tells the OS to hand the URL to the default calendar app for
-// subscribing, which is what makes "add to calendar" actually work on
-// Android/Google Calendar and iOS instead of just downloading a file.
+// Bare webcal:// links silently no-op on browsers with no registered
+// protocol handler (most Android Chrome installs). Google Calendar's
+// subscribe-by-URL web endpoint works from any browser and is what most
+// Android users' default calendar app is anyway.
 const icsUrl = new URL('events.ics', window.location.href);
-document.getElementById('ics-subscribe').href = 'webcal://' + icsUrl.host + icsUrl.pathname + icsUrl.search;
+const webcalUrl = 'webcal://' + icsUrl.host + icsUrl.pathname + icsUrl.search;
+document.getElementById('ics-subscribe').href = 'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(webcalUrl);
+document.getElementById('ics-subscribe').target = '_blank';
+document.getElementById('ics-subscribe').rel = 'noopener';
 
 fetch('events.json')
   .then(r => r.json())
