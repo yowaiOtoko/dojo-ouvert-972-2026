@@ -36,6 +36,22 @@
     color: var(--muted);
     font-size: 0.95rem;
   }
+  #ics-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  #ics-cta:hover { background: #3f7fc2; }
   #legend {
     display: flex;
     flex-wrap: wrap;
@@ -162,6 +178,8 @@
 <header>
   <h1>Opération Dojos Ouverts 2026</h1>
   <p>Ligue de Judo de la Martinique — calendrier public, lecture seule</p>
+  <br>
+  <a id="ics-cta" href="#" download="dojos-ouverts-2026.ics">📅 Télécharger le calendrier (.ics)</a>
 </header>
 
 <div id="legend"></div>
@@ -191,9 +209,46 @@ document.getElementById('modal-overlay').addEventListener('click', (e) => {
   if (e.target.id === 'modal-overlay') closeModal();
 });
 
+function icsEscape(str) {
+  return String(str).replace(/\\/g, '\\\\').replace(/,/g, '\\,').replace(/;/g, '\\;').replace(/\n/g, '\\n');
+}
+function icsDateUTC(d) {
+  return d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+}
+function icsDateOnly(dateStr) {
+  return dateStr.replace(/-/g, '');
+}
+function buildICS(events) {
+  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Ligue de Judo de la Martinique//Dojos Ouverts 2026//FR', 'CALSCALE:GREGORIAN'];
+  events.forEach((e, i) => {
+    lines.push('BEGIN:VEVENT');
+    lines.push('UID:dojos-ouverts-2026-' + i + '@judo-martinique');
+    lines.push('SUMMARY:' + icsEscape(e.title));
+    if (e.allDay) {
+      lines.push('DTSTART;VALUE=DATE:' + icsDateOnly(e.start));
+      if (e.end) lines.push('DTEND;VALUE=DATE:' + icsDateOnly(e.end));
+    } else {
+      lines.push('DTSTART:' + icsDateUTC(new Date(e.start)));
+      if (e.end) lines.push('DTEND:' + icsDateUTC(new Date(e.end)));
+    }
+    if (e.location) lines.push('LOCATION:' + icsEscape(e.location));
+    const descParts = [];
+    if (e.description) descParts.push(e.description);
+    if (e.contact) descParts.push('Contact : ' + e.contact);
+    if (descParts.length) lines.push('DESCRIPTION:' + icsEscape(descParts.join('\n')));
+    lines.push('END:VEVENT');
+  });
+  lines.push('END:VCALENDAR');
+  return lines.join('\r\n');
+}
+
 fetch('events.json')
   .then(r => r.json())
   .then(events => {
+    const icsContent = buildICS(events);
+    const icsBlob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    document.getElementById('ics-cta').href = URL.createObjectURL(icsBlob);
+
     // legend
     const seen = new Map();
     events.forEach(e => {
