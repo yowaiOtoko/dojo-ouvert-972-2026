@@ -137,6 +137,24 @@
     font-size: 0.78rem;
     padding: 10px 20px 30px;
   }
+
+  @media (max-width: 640px) {
+    header { padding: 18px 12px 8px; }
+    header h1 { font-size: 1.25rem; }
+    header p { font-size: 0.85rem; }
+    #legend { padding: 10px 12px; gap: 6px 12px; }
+    .legend-item { font-size: 0.75rem; }
+    #calendar-wrap { padding: 0 8px 24px; }
+    #calendar { padding: 8px; border-radius: 8px; }
+    .fc .fc-toolbar { flex-direction: column; gap: 10px; }
+    .fc .fc-toolbar-chunk { display: flex; justify-content: center; }
+    .fc .fc-toolbar-title { font-size: 1rem; }
+    .fc .fc-button { padding: 4px 8px; font-size: 0.78rem; }
+    .fc-daygrid-day-number { font-size: 0.78rem; }
+    .fc-event { font-size: 0.7rem; }
+    .fc .fc-col-header-cell-cushion { font-size: 0.72rem; }
+    #modal { padding: 16px; }
+  }
 </style>
 </head>
 <body>
@@ -191,9 +209,10 @@ fetch('events.json')
     });
 
     const calendarEl = document.getElementById('calendar');
+    const isMobile = window.matchMedia('(max-width: 640px)').matches;
     const calendar = new FullCalendar.Calendar(calendarEl, {
       locale: 'fr',
-      initialView: 'dayGridMonth',
+      initialView: isMobile ? 'listMonth' : 'dayGridMonth',
       initialDate: '2026-07-15',
       headerToolbar: {
         left: 'prev,next today',
