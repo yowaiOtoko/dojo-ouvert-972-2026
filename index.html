@@ -111,6 +111,27 @@
     z-index: 10;
   }
   #theme-toggle:hover { background: var(--panel-alt); }
+  #age-notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 10px 16px;
+    background: linear-gradient(0deg, rgba(246, 191, 38, 0.1), rgba(246, 191, 38, 0.1)), var(--panel);
+    border: 1px solid #f6bf26;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    color: var(--text);
+  }
+  #age-notice .belt-dot {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #f6bf26;
+    box-shadow: 0 0 0 3px rgba(246, 191, 38, 0.25);
+  }
   #legend {
     display: flex;
     flex-wrap: wrap;
@@ -221,6 +242,7 @@
     header h1 { font-size: 1.25rem; }
     header p { font-size: 0.85rem; }
     .cta-btn { font-size: 0.82rem; padding: 8px 14px; }
+    #age-notice { margin: 0 12px; font-size: 0.8rem; }
     #legend { padding: 10px 12px; gap: 6px 12px; }
     .legend-item { font-size: 0.75rem; }
     #calendar-wrap { padding: 0 8px 24px; }
@@ -247,6 +269,11 @@
     <a id="ics-subscribe" class="cta-btn" href="#">📅 Ajouter à mon calendrier</a>
   </div>
 </header>
+
+<div id="age-notice">
+  <span class="belt-dot"></span>
+  <span>À partir de benjamin (ceinture jaune)</span>
+</div>
 
 <div id="legend"></div>
 
