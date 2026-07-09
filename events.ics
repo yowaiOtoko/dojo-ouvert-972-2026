@@ -1,0 +1,301 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ligue de Judo de la Martinique//Dojos Ouverts 2026//FR
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Opération Dojos Ouverts 2026
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-0@judo-martinique
+SUMMARY:CAMRP Rivière Pilote - Stage Judo/Jujitsu
+DTSTART:20260720T223000Z
+DTEND:20260721T003000Z
+LOCATION:Salle de Sport-Cité Pomponne\, Rivière-Pilote
+DESCRIPTION:Travail technique\, apprentissage randori\, préparation UV2 technique.\nContact : 0696 11 41 66 / 0696 84 74 22
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-1@judo-martinique
+SUMMARY:CAMRP Rivière Pilote - Stage Judo/Jujitsu
+DTSTART:20260721T223000Z
+DTEND:20260722T003000Z
+LOCATION:Salle de Sport-Cité Pomponne\, Rivière-Pilote
+DESCRIPTION:Travail technique\, apprentissage randori\, préparation UV2 technique.\nContact : 0696 11 41 66 / 0696 84 74 22
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-2@judo-martinique
+SUMMARY:CAMRP Rivière Pilote - Stage Judo/Jujitsu
+DTSTART:20260722T223000Z
+DTEND:20260723T003000Z
+LOCATION:Salle de Sport-Cité Pomponne\, Rivière-Pilote
+DESCRIPTION:Travail technique\, apprentissage randori\, préparation UV2 technique.\nContact : 0696 11 41 66 / 0696 84 74 22
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-3@judo-martinique
+SUMMARY:CAMRP Rivière Pilote - Stage Judo/Jujitsu
+DTSTART:20260723T223000Z
+DTEND:20260724T003000Z
+LOCATION:Salle de Sport-Cité Pomponne\, Rivière-Pilote
+DESCRIPTION:Travail technique\, apprentissage randori\, préparation UV2 technique.\nContact : 0696 11 41 66 / 0696 84 74 22
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-4@judo-martinique
+SUMMARY:CAMRP Rivière Pilote - Stage Judo/Jujitsu
+DTSTART:20260724T223000Z
+DTEND:20260725T003000Z
+LOCATION:Salle de Sport-Cité Pomponne\, Rivière-Pilote
+DESCRIPTION:Travail technique\, apprentissage randori\, préparation UV2 technique.\nContact : 0696 11 41 66 / 0696 84 74 22
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-5@judo-martinique
+SUMMARY:Dojo du Squale Club - Jujitsu
+DTSTART:20260727T230000Z
+DTEND:20260728T003000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Participation gratuite.\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-6@judo-martinique
+SUMMARY:Dojo du Squale Club - Jujitsu
+DTSTART:20260810T230000Z
+DTEND:20260811T003000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Participation gratuite.\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-7@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo pour tous
+DTSTART:20260715T230000Z
+DTEND:20260716T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Participation gratuite. Tous les judokas bienvenus.\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-8@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo pour tous
+DTSTART:20260722T230000Z
+DTEND:20260723T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Participation gratuite. Tous les judokas bienvenus.\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-9@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo pour tous
+DTSTART:20260729T230000Z
+DTEND:20260730T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Participation gratuite. Tous les judokas bienvenus.\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-10@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo pour tous
+DTSTART:20260805T230000Z
+DTEND:20260806T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Participation gratuite. Tous les judokas bienvenus.\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-11@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo pour tous
+DTSTART:20260812T230000Z
+DTEND:20260813T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Participation gratuite. Tous les judokas bienvenus.\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-12@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo spécial compétiteurs
+DTSTART:20260718T230000Z
+DTEND:20260719T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Horaire estimé (non précisé sur flyer).\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-13@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo spécial compétiteurs
+DTSTART:20260725T230000Z
+DTEND:20260726T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Horaire estimé (non précisé sur flyer).\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-14@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo spécial compétiteurs
+DTSTART:20260801T230000Z
+DTEND:20260802T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Horaire estimé (non précisé sur flyer).\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-15@judo-martinique
+SUMMARY:Dojo du Squale Club - Judo spécial compétiteurs
+DTSTART:20260808T230000Z
+DTEND:20260809T010000Z
+LOCATION:Dojo du Squale Club\, Sainte-Luce
+DESCRIPTION:Horaire estimé (non précisé sur flyer).\nContact : 0696 28 76 62
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-16@judo-martinique
+SUMMARY:Samouraï Club Californie - Stage Crossops
+DTSTART;VALUE=DATE:20260706
+DTEND;VALUE=DATE:20260713
+LOCATION:Californie\, Lamentin
+DESCRIPTION:Voir flyer/PJ pour détails programme.\nContact : 0696 29 92 69
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-17@judo-martinique
+SUMMARY:Budokai Martinique - Caravane du Sport Jeunesse (matin)
+DTSTART:20260720T120000Z
+DTEND:20260720T160000Z
+LOCATION:Centre des Arts Martiaux\, Sainte-Marie
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 88 23 69
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-18@judo-martinique
+SUMMARY:Budokai Martinique - Caravane du Sport Jeunesse (après-midi)
+DTSTART:20260720T183000Z
+DTEND:20260720T200000Z
+LOCATION:Centre des Arts Martiaux\, Sainte-Marie
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 88 23 69
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-19@judo-martinique
+SUMMARY:Budokai Martinique - Caravane du Sport Jeunesse (matin)
+DTSTART:20260721T120000Z
+DTEND:20260721T160000Z
+LOCATION:Centre des Arts Martiaux\, Sainte-Marie
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 88 23 69
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-20@judo-martinique
+SUMMARY:Budokai Martinique - Caravane du Sport Jeunesse (après-midi)
+DTSTART:20260721T183000Z
+DTEND:20260721T200000Z
+LOCATION:Centre des Arts Martiaux\, Sainte-Marie
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 88 23 69
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-21@judo-martinique
+SUMMARY:Budokai Martinique - Caravane du Sport Jeunesse (matin)
+DTSTART:20260722T120000Z
+DTEND:20260722T160000Z
+LOCATION:Centre des Arts Martiaux\, Sainte-Marie
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 88 23 69
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-22@judo-martinique
+SUMMARY:Budokai Martinique - Caravane du Sport Jeunesse (après-midi)
+DTSTART:20260722T183000Z
+DTEND:20260722T200000Z
+LOCATION:Centre des Arts Martiaux\, Sainte-Marie
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 88 23 69
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-23@judo-martinique
+SUMMARY:Budokai Martinique - Caravane du Sport Jeunesse (matin)
+DTSTART:20260723T120000Z
+DTEND:20260723T160000Z
+LOCATION:Centre des Arts Martiaux\, Sainte-Marie
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 88 23 69
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-24@judo-martinique
+SUMMARY:Judo Club du Carbet - Caravane du Sport Jeunesse
+DTSTART:20260720T170000Z
+DTEND:20260720T200000Z
+LOCATION:Dojo du Carbet\, Le Carbet
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 54 44 35
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-25@judo-martinique
+SUMMARY:Judo Club du Carbet - Caravane du Sport Jeunesse
+DTSTART:20260721T120000Z
+DTEND:20260721T160000Z
+LOCATION:Dojo du Carbet\, Le Carbet
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 54 44 35
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-26@judo-martinique
+SUMMARY:Judo Club du Carbet - Caravane du Sport Jeunesse
+DTSTART:20260722T170000Z
+DTEND:20260722T200000Z
+LOCATION:Dojo du Carbet\, Le Carbet
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 54 44 35
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-27@judo-martinique
+SUMMARY:Judo Club du Carbet - Caravane du Sport Jeunesse
+DTSTART:20260723T170000Z
+DTEND:20260723T200000Z
+LOCATION:Dojo du Carbet\, Le Carbet
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 54 44 35
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-28@judo-martinique
+SUMMARY:Judo Club du Carbet - Caravane du Sport Jeunesse
+DTSTART:20260724T120000Z
+DTEND:20260724T160000Z
+LOCATION:Dojo du Carbet\, Le Carbet
+DESCRIPTION:Caravane du Sport Jeunesse.\nContact : 0696 54 44 35
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-29@judo-martinique
+SUMMARY:CAJAD - Stage de Judo
+DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260718
+LOCATION:Agora Sport Dojo\, Saint-Joseph
+DESCRIPTION:Horaire non précisé sur flyer.\nContact : 0696 45 17 77
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-30@judo-martinique
+SUMMARY:CAJAD - Stage de Judo
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260722
+LOCATION:Agora Sport Dojo\, Saint-Joseph
+DESCRIPTION:Horaire non précisé sur flyer.\nContact : 0696 45 17 77
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-31@judo-martinique
+SUMMARY:CAJAD - Caravane du Sport Jeunesse (7-14 ans)
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260725
+LOCATION:Saint-Joseph
+DESCRIPTION:Voir flyer/PJ pour programme.\nContact : 0696 45 17 77
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-32@judo-martinique
+SUMMARY:Stage de Judo / CAJAD
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260829
+LOCATION:Saint-Joseph
+DESCRIPTION:Voir flyer/PJ pour programme.\nContact : 0696 45 17 77
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-33@judo-martinique
+SUMMARY:Judo Club Saint-Pierre - Taiso-Judo-Jujitsu
+DTSTART:20260805T220000Z
+DTEND:20260806T000000Z
+LOCATION:Dojo de Saint-Pierre
+DESCRIPTION:Taiso-Judo-Jujitsu.\nContact : 0696 70 73 14
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-34@judo-martinique
+SUMMARY:Judo Club Saint-Pierre - Taiso-Judo-Jujitsu
+DTSTART:20260812T220000Z
+DTEND:20260813T000000Z
+LOCATION:Dojo de Saint-Pierre
+DESCRIPTION:Taiso-Judo-Jujitsu.\nContact : 0696 70 73 14
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-35@judo-martinique
+SUMMARY:Judo Club Saint-Pierre - Taiso-Judo-Jujitsu
+DTSTART:20260819T220000Z
+DTEND:20260820T000000Z
+LOCATION:Dojo de Saint-Pierre
+DESCRIPTION:Taiso-Judo-Jujitsu.\nContact : 0696 70 73 14
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-36@judo-martinique
+SUMMARY:Formation "Prévenir\, Identifier\, Agir" - Contre les dérives
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20260830
+DESCRIPTION:Formation contre les violences sexistes et sexuelles dans le sport. Journée de formation\, 7 heures. Valide badge module fédéral.
+END:VEVENT
+END:VCALENDAR
