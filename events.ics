@@ -298,4 +298,28 @@ DTSTART;VALUE=DATE:20260829
 DTEND;VALUE=DATE:20260830
 DESCRIPTION:Formation contre les violences sexistes et sexuelles dans le sport. Journée de formation\, 7 heures. Valide badge module fédéral.
 END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-37@judo-martinique
+SUMMARY:USLET - Beach Wrestling (Lutte sur sable)
+DTSTART:20260720T220000Z
+DTEND:20260720T230000Z
+LOCATION:Aire de jeux de plage\, Place de Schœlcher (près du Cercle Nautique)
+DESCRIPTION:Ouverture des créneaux de pratique. Enfants et adultes\, tous niveaux.
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-38@judo-martinique
+SUMMARY:USLET - Beach Wrestling (Lutte sur sable)
+DTSTART:20260722T180000Z
+DTEND:20260722T230000Z
+LOCATION:Aire de jeux de plage\, Place de Schœlcher (près du Cercle Nautique)
+DESCRIPTION:Ouverture des créneaux de pratique. Enfants et adultes\, tous niveaux.
+END:VEVENT
+BEGIN:VEVENT
+UID:dojos-ouverts-2026-39@judo-martinique
+SUMMARY:USLET - Beach Wrestling (Lutte sur sable)
+DTSTART:20260724T220000Z
+DTEND:20260725T000000Z
+LOCATION:Aire de jeux de plage\, Place de Schœlcher (près du Cercle Nautique)
+DESCRIPTION:Ouverture des créneaux de pratique. Enfants et adultes\, tous niveaux.
+END:VEVENT
 END:VCALENDAR
