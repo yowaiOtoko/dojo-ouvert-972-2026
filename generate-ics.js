@@ -15,10 +15,10 @@ function icsDateOnly(dateStr) {
   return dateStr.replace(/-/g, '');
 }
 function buildICS(events) {
-  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Ligue de Judo de la Martinique//Dojos Ouverts 2026//FR', 'CALSCALE:GREGORIAN', 'X-WR-CALNAME:Opération Dojos Ouverts 2026'];
+  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Arts Martiaux Juillet/Aout 2026//FR', 'CALSCALE:GREGORIAN', 'X-WR-CALNAME:Arts Martiaux Juillet/Aout 2026'];
   events.forEach((e, i) => {
     lines.push('BEGIN:VEVENT');
-    lines.push('UID:dojos-ouverts-2026-' + i + '@judo-martinique');
+    lines.push('UID:arts-martiaux-juillet-aout-2026-' + i + '@judo-martinique');
     lines.push('SUMMARY:' + icsEscape(e.title));
     if (e.allDay) {
       lines.push('DTSTART;VALUE=DATE:' + icsDateOnly(e.start));
